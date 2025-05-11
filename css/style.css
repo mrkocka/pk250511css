@@ -1,0 +1,79 @@
+h1 {
+    color: blue;
+}
+
+/* -----------Pelda1----------- */
+
+div {
+    width: 200px;
+    height: 200px;
+}
+
+.pelda1 {
+    background-color: cornflowerblue;
+    transition: all 0.3s ease;
+}
+
+.pelda1:hover {
+    background-color: red;
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+/* -----------Pelda2----------- */
+
+.pelda2 {
+    background-color: red;
+    cursor: pointer;
+    animation-name: colorchange;
+
+}
+
+.pelda2:hover {
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+
+}
+
+@keyframes colorchange {
+    0% {
+        background-color: red;
+    }
+
+    50% {
+        background-color: blue;
+    }
+
+    100% {
+        background-color: green;
+    }
+
+}
+
+
+/* -----------Pelda3----------- */
+.pelda3 {
+    background-color: orange;
+}
+
+.pelda3:hover {
+    animation: rotate 8s infinite linear;
+    cursor: pointer;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    50% {
+        transform: rotate(120deg);
+        background-color: blue;
+    }
+
+    100% {
+        transform: rotate(360deg);
+        background-color: red;
+    }
+
+}
